@@ -1,8 +1,8 @@
 // variaveis de contagem
 
-var qtdCadastrados =0;
-var qtdEstoqueBaixo =0;
-var safraMaisVelha =0;
+let = qtdCadastrados =0;
+let = qtdEstoqueBaixo =0;
+let = safraMaisVelha =0;
 
 // declaração de funções
 
@@ -54,7 +54,7 @@ function solicitarTexto(msg){
 }
 
 function classificarVinho(anoVinho){
-    var classficacao = "";
+    let = classficacao = "";
     if (anoVinho>=2020){
         classficacao = "jovem"
     }
@@ -75,11 +75,5 @@ function estoqueBaixo(numEstoque){
     }
 }
 
-// teste funções ***APAGAR DPS BRUNÃO***
-exibirValores("nome", "tipo", "safra", "qtdEstoque")
-var testeNum = solicitarNumero("entre com um numero");
-console.log(testeNum)
-var testeTxt = solicitarTexto("entre com um texto");
-console.log(testeTxt)
-
 // codigo principal
+
