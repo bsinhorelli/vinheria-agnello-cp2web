@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', Garamond, serif;
+    font-size: 1.5rem;
+}
+
+.pagina {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4.2%;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.conteudo {
+    flex: 1;
+    padding-top: 70px;
+}
+
+.conteudo h1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 45px;
+}
+
+.conteudo h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #b6a579;
+    margin-top: 20px;
+}
+
+.apresentacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.imagem-adega {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.descricao {
+    color: #c8b99a;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.descricao::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #b6a579;
+    margin-bottom: 25px;
+}
+
+.rodape {
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #af9560;
+    border-top: 1px solid #6f5b3f;
+    margin-top: 80px;
+}
+
+@media (max-width: 800px) {
+    .pagina {
+        padding: 0 6%;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .conteudo {
+        padding-top: 50px;
+    }
+
+    .conteudo h1 {
+        font-size: 3rem;
+    }
+
+    .apresentacao {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .descricao {
+        font-size: 1.3rem;
+    }
+
+    .rodape {
+        margin-top: 60px;
+    }
+}
